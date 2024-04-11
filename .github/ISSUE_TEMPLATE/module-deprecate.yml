@@ -1,6 +1,6 @@
 ---
 name: Module Deprecate
-about: Deprecate a module with optional replacement
+description: Deprecate a module with optional replacement
 title: '[Deprecate|Transfer]: '
 labels:
   - administrative
