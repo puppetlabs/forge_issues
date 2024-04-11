@@ -1,0 +1,44 @@
+---
+name: Module Deprecate
+about: Deprecate a module with optional replacement
+title: '[Deprecate|Transfer]: '
+labels:
+  - administrative
+assignees:
+  - binford2k
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for using this form. Please update the title with the name of the module and which operation you're asking for.
+  - type: input
+    id: deprecate
+    attributes:
+      label: Deprecated module
+      description: What's the name / URL / repo of the module to deprecate?
+    validations:
+      required: true
+  - type: input
+    id: replacement
+    attributes:
+      label: Replacement module
+      description: Do you suggest a replacement module? Add its name / URL / repo here.
+    validations:
+      required: false
+  - type: dropdown
+    id: authority
+    attributes:
+      label: What authority do you have for making this request?
+      multiple: true
+      options:
+        - It's my module. (github username matches repo owner or contact info provided for verification)
+        - I am a Vox Pupuli PMC member
+        - The repository has already been transferred
+        - other (add more info below)
+    validations:
+      required: true
+  - type: textarea
+    id: info
+    attributes:
+      label: More information
+      description: Add any more relevant information here please!
+
